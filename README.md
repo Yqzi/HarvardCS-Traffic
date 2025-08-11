@@ -1,0 +1,3 @@
+Initially I ran the program without normalizing the pixel values, this caused my accuracy to be sub 6% and my loss to be over 3.0. After dividing by 255 converting the values to be in the range of 0 and 1, my accuracy sky rocketed to 96.7% and my loss plumeted to 0.13.
+
+Surprisingly increading the input filter from 8 all the way to 32 only increases the accuracy by 0.5%. Having doubled the convolution and pooling faze and chaning the first pool size to (4, 4) dropped the accuracy by a substantial amount leaving it at 76% and the loss raised to 0.8. 
